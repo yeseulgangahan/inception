@@ -32,11 +32,7 @@ RUN apk update && apk upgrade && apk add --no-cache \
     sed -i "s|listen = 127.0.0.1:9000|listen = 0.0.0.0:9000|g" \
       /etc/php${PHP_VERSION}/php-fpm.d/www.conf && \
   # listen.owner: php-fpm 소켓 파일의 소유자. nobody로 변경할 경우 보안에 좋다.
-    sed -i "s|;listen.owner = nobody|listen.owner = nobody|g" \
-      /etc/php${PHP_VERSION}/php-fpm.d/www.conf && \
   # listen.group: php-fpm 소켓 파일의 소유 그룹. nobody로 변경할 경우 보안에 좋다.
-    sed -i "s|;listen.group = nobody|listen.group = nobody|g" \
-      /etc/php${PHP_VERSION}/php-fpm.d/www.conf && \
   # clear_env: 디폴트 설정이 보안상 true인데 no로 바꿔서 환경변수를 삭제하지 못하게 한다.
     sed -i "s|;clear_env = no|clear_env = no|g" \
       /etc/php${PHP_VERSION}/php-fpm.d/www.conf && \

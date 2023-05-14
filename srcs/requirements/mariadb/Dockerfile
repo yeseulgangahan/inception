@@ -16,7 +16,6 @@ RUN apk update && apk upgrade && apk add --no-cache mariadb mariadb-client && \
 #               0.0.0.0 설정은 MariaDB 서버가 모든 네트워크 인터페이스(다른 컨테이너)에서 클라이언트 연결을 수신할 수 있도록 지정한다.
 # tee: 입력을 출력하면서 동시에 파일에 쓴다
     { echo '[mysqld]'; \
-      echo 'skip-host-cache'; \
       echo 'skip-name-resolve'; \
       echo 'bind-address=0.0.0.0'; \
     } | tee  /etc/my.cnf.d/docker.cnf; \
