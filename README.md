@@ -10,6 +10,7 @@ Docker를 사용하여 워드프레스 블로그를 위한 소규모 인프라�
 ## Features
 - Debian 안정버전을 사용하는 사용자 지정 Dockerfile로 각 서비스 설정
 - docker compose로 여러 개의 컨테이너를 한 번에 관리
+- 호스트 컴퓨터에 폴더 생성 후 볼륨을 바인드마운트
 - 브라우저에서 `https://127.0.0.1:433` 혹은 `https://yehan.42.fr`로 접근 가능
 
 ## Usage
