@@ -26,4 +26,4 @@ Docker를 사용하여 워드프레스 블로그를 위한 소규모 인프라�
 <img width="535" alt="image" src="https://github.com/yeseulgangahan/inception/assets/88709878/4caacbf6-411c-42e2-a366-13acf6fbd64d">
 
 ## Notion Post
-[inception: Docker 입문하기](https://probable-perch-892.notion.site/inception-Docker-d3c73daae0754bcb8e93cd57999e5c75?pvs=4)
+[inception: Docker 입문하기](https://yeseulhan.notion.site/inception-Docker-d3c73daae0754bcb8e93cd57999e5c75?pvs=4)
